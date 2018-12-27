@@ -18,7 +18,7 @@ class ImageConverter {
         for (i in 0 until height) {
             for (j in 0 until width) {
                 val char: Char = getAsciiChar((rgbAverage(Color(image.getRGB(j, i)))))
-                print(char.toString().repeat(3))
+                print(char.toString().repeat(2))
             }
             println()
         }
